@@ -18,6 +18,7 @@ class ServiceExample
         // Business/Application logic here then call the repository
         // Any manipulation of data should be done here, not in the controller
         // TODO: check the project usersservice for a more complex example
+
         return $this->repositoryExample->getUserById($UserId);
     }
 }
