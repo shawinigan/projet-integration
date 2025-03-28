@@ -53,10 +53,21 @@
       this.callApi();
     },
     methods: {
+      // Simulate an API call with full axios support
+      // TODO: Explore how to use axios and all its features
       callApi() {
-        this.$axios.get('/test').then((response) => {
-          this.apiResponse = response.data.message;
-        });
+        this.$axios
+          .get('/test')
+          .then((response) => {
+            this.apiResponse = response.data.message;
+          })
+          .catch((error) => {
+            console.error('API error: ', error);
+            this.apiResponse = error.response.data.message;
+          })
+          .finally(() => {
+            console.log('API call completed.');
+          });
       }
     }
   };

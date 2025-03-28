@@ -8,14 +8,13 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="min-h-screen flex flex-col font-sans antialiased dark:bg-zinc-900 dark:text-white/80">
+<body class="min-h-screen flex flex-col font-inter antialiased dark:bg-zinc-900 dark:text-white/80">
     <main id="app" class="flex-grow">
     </main>
     <footer class="h-20 py-16 text-center text-sm text-black dark:text-white/70">

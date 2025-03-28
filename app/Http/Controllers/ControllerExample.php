@@ -10,6 +10,10 @@ use Throwable;
 
 class ControllerExample extends Controller
 {
+    // TODO: explore what is a controller and how it works
+    // Controllers are used to handle HTTP requests and responses
+    // They should not contain any business logic, only calls to services
+    // They simply receive a request, validate the data in the request, call a service, and return a response
     protected ServiceExample $serviceExample;
 
     public function __construct(ServiceExample $serviceExample)

@@ -18,5 +18,6 @@ class BaseUserSeeder extends Seeder
             'email' => 'admin@example.com',
             'password' => Hash::make('shawi123'),
         ]);
+        User::factory()->count(10)->create();
     }
 }
